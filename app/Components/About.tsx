@@ -25,22 +25,23 @@ const About = () => {
         <Reveal
         
         children={
-            <div className='grid grid-cols-2 gap-4 grid-rows-4'>
-                <BentoBox
-                    gridPosCol='1'
-                    gridPosRow='2'
-                    height='5rem'
-                    width='50%'
-                />
+            <></>
+            // <div className='grid grid-cols-2 gap-4 grid-rows-4'>
+            //     <BentoBox
+            //         gridPosCol='1'
+            //         gridPosRow='2'
+            //         height='5rem'
+            //         width='100%'
+            //     />
 
-                <BentoBox
-                    gridPosCol='2'
-                    gridPosRow='1'
-                    height='5rem'
-                    width='50%'
+            //     <BentoBox
+            //         gridPosCol='2'
+            //         gridPosRow='1'
+            //         height='5rem'
+            //         width='`100%'
 
-                />
-            </div>
+            //     />
+            // </div>
         }
 
         x='800'
@@ -58,6 +59,7 @@ const AboutStyled = styled.div`
     min-height: 100vh;
     padding-top: 10rem;
     padding-left: 15rem;
+    padding-right: 15rem;
     width: 100%;
     /* overflow-y: scroll; */
     display: flex;
