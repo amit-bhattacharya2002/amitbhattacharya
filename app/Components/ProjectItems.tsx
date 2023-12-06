@@ -25,27 +25,26 @@ const ProjectItems = ({projects}: Projects | any) => {
     setMobileClicked(!mobView)
   }
   return (
-    <div className={`${lexendDeca.className} flex items-center flex-col md:flex-row`}>
+    <div className={`${lexendDeca.className} flex items-center flex-col md:flex-row gap-8`}>
 
 
             <div className='w-[50%]'>
-              <Link href={`${projects.url}`} target='_blank' className=''>
-                  <Image
-                  src={mobView ? projects.images[1] : projects.images[0]}
-                  width={mobView ? 800 : 1500}
-                  height={mobView ? 700 : 1000}
-                  alt={`${projects.name}`}
-                  >
-                  </Image>
-              
+              <Link href={`${projects.url}`} target='_blank' className='h-full p-5'>
+                  <div>
+                    <Image
+                    src={mobView ? projects.images[1] : projects.images[0]}
+                    width={mobView ? 800 : 1500}
+                    height={mobView ? 700 : 1000}
+                    alt={`${projects.name}`}/>
+                  </div>
               </Link>
 
-              <button onClick={e => (handleMobClick())}>{mobView? <div className='flex gap-2 items-center'><FaLaptop/> <h1>Laptop View</h1></div> : <div className='flex gap-2 items-center'><MdOutlinePhoneAndroid/> Mobile View</div>} </button>
+              <button onClick={e => (handleMobClick())}>{mobView? (<div className='flex gap-2 items-center text-xs sm:text-l '><FaLaptop/> <h1>Laptop View</h1></div>) : (<div className='flex gap-2 items-center text-xs sm:text-l'><MdOutlinePhoneAndroid/> Mobile View</div>)} </button>
             </div>
 
-        <div className='text-start flex flex-col gap-6 w-[50%]'>
+        <div className='sm:text-start text-center flex flex-col gap-6 w-[50%]'>
             <h1 className='text-xl md:text-4xl'>{projects.name}</h1>
-            <p>{projects.description}</p>
+            <p className={`text-xs md:text-2xl`}>{projects.description}</p>
         </div>
     </div>
   )

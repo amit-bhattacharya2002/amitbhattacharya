@@ -56,7 +56,7 @@ const AboutAd = () => {
         
     
             <div className="flex flex-col">
-                <div className=''>
+                <div className='text-start m-auto'>
                     <TabButton selectTab={() => handleTabChange("skills")} active={tab ==="skills"}> Skills </TabButton>
                     
                     <TabButton selectTab={() => handleTabChange("experience")} active={tab ==="experience"} > Experience </TabButton>

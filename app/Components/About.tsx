@@ -13,7 +13,7 @@ const About = () => {
 
 <>
             
-            <h1 className='about border-b border-purple-500'>About Me</h1>
+            <h1 className='about border-b border-purple-500 text-center sm:text-start w-full'>About Me</h1>
             <Reveal  x="-500" width='100%'>
                 <>
                 <p className='mt-[1rem]'>Creative Web Designer incorporates rich media assets and extensive interactivity to engage and capture audiences. Develops novel architectures and navigation plans to differentiate final products from existing competition. Specializes in sites guaranteed to stand out among crowded industries and product categories.
@@ -62,14 +62,21 @@ const AboutStyled = styled.div`
 
         width: 40%;
         padding-bottom: 1rem;
+
+        @media screen and (max-width: 480px){
+            font-size: 1rem;
+            display: block;
+            margin: 0;
+            width: 100%;
+        }
     }
 
     @media screen and (max-width: 480px){
       font-size: 0.5rem;
       width: 100vw;
     padding: 1rem;
+    padding-top: 5rem;
     flex-direction: column;
-
     /* text-align: center; */
     }
 `

@@ -15,9 +15,9 @@ const lexendDeca = Lexend_Deca({subsets: ['latin']})
 const Contact = () => {
   return (
     <ContactStyled id='contact'>
-      <div className='w-[50%] flex flex-col gap-4'> {/* className='mt-[10rem] p-4 pt-4' */}
+      <div className='sm:w-[50%] w-full flex flex-col gap-4'> {/* className='mt-[10rem] p-4 pt-4' */}
         <h1 className={`text-2xl text-center md:text-start md:text-5xl ${lexendDeca.className}`}>AMIT BHATTACHARYA</h1>
-        <div className='flex flex-col justify-between'>
+        <div className='flex flex-col sm:m-0 m-auto justify-between'>
           <h2 className='flex gap-[2rem] px-4 items-center'><MdOutlineEmail/><span className="infoLeft">amit.bhattacharya2002@gmail.com</span></h2>
           <h2 className='flex gap-[2rem] px-4 items-center'><FaPhoneAlt/><span className="infoLeft">+1 604 710 4814</span> </h2>
 
@@ -54,7 +54,7 @@ const ContactStyled = styled.div`
       width: 100vw;
     padding: 1rem;
     flex-direction: column;
-
+      padding-top: 5rem;
     /* text-align: center; */
     }
 

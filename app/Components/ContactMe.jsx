@@ -29,7 +29,7 @@ export default function Contact() {
 
   return (
     <> 
-      <form className="h-full w-[80%] flex flex-col gap-5 m-auto mt-[10rem] scroll-m-[10rem] text-purple-500 p-4" onSubmit={handleSubmit}>
+      <form className="h-full w-[80%] flex flex-col gap-5 m-auto mt-5 sm:mt-[10rem] scroll-m-[10rem] text-purple-500 p-4" onSubmit={handleSubmit}>
         <h1 className={`${lexendDeca.className} text-3xl border-b-2 pb-4 border-b-purple-500`}>GET IN TOUCH</h1>
         <input type="text" className="p-4" name="name" placeholder="Enter your name"/>
         <input type="email"  className="p-4" name="email" placeholder="Enter your email"/>

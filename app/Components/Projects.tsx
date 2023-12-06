@@ -12,7 +12,7 @@ const lexendDeca = Lexend_Deca({subsets: ['latin']})
 const Projects = () => {
   return (
     <ProjectStyled id='projects'>
-          <h1 className={`${lexendDeca.className} text-[1.5rem] text-start ml-[5rem]  mt-[5rem] mb-[5rem] pb-4 border-b-2 border-purple-500 w-[40%]`}>Projects</h1>
+          <h1 className={`${lexendDeca.className} sm:text-[1.5rem] text-center sm:text-start sm:ml-[5rem] m:auto w-full block sm:mt-[5rem] sm:mb-[5rem] pb-4 border-b-2 border-purple-500`}>Projects</h1>
 
         <Reveal
           x='-100'
@@ -45,11 +45,11 @@ const ProjectStyled = styled.div`
     /* overflow-y: scroll; */
 
     @media screen and (max-width: 480px){
-      font-size: 0.5rem;
+      font-size: 1rem;
       width: 100vw;
     padding: 1rem;
     flex-direction: column;
-
+      padding-top: 5rem;
     /* text-align: center; */
     }
 
