@@ -8,7 +8,7 @@ import { MdOutlinePhoneAndroid } from "react-icons/md";
 import { Montserrat, Roboto, Lexend_Deca} from 'next/font/google'
 
 const lexendDeca = Lexend_Deca({subsets: ['latin']})
-
+const montserrat = Montserrat({subsets: ['latin']})
 import Link from 'next/link';
 
 interface Projects{
@@ -43,8 +43,8 @@ const ProjectItems = ({projects}: Projects | any) => {
             </div>
 
         <div className='sm:text-start text-center flex flex-col gap-6 w-[50%]'>
-            <h1 className='text-xl md:text-4xl'>{projects.name}</h1>
-            <p className={`text-xs md:text-2xl`}>{projects.description}</p>
+            <h1 className='text-xl sm:text-4xl'>{projects.name}</h1>
+            <p className={`text-sm sm:text-xl ${montserrat.className}`}>{projects.description}</p>
         </div>
     </div>
   )

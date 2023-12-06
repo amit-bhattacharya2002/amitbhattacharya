@@ -4,6 +4,7 @@ import './globals.css'
 import Header from './Utils/Header'
 import Footer from './Utils/Footer'
 import MobileNav from './Utils/MobileNav'
+import ActiveSectionContextProvider from './Providers/ActiveSectionContext'
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -20,10 +21,13 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={inter.className}>
+        <ActiveSectionContextProvider>
         <Header/>
         {/* <MobileNav/> */}
         {children}
         {/* <Footer/> */}
+
+        </ActiveSectionContextProvider>
         </body>
     </html>
   )
