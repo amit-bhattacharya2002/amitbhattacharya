@@ -9,8 +9,8 @@ const projects = [
         url: "https://photoportfolio-mu.vercel.app",
         images:[
             "/photoporto-desk.png",
-            "/photoporto-mob1.png",
-            "/photoporto-mob2.png"
+            "/photoporto-mob.png"
+          
         ],
         img: "/photoporto-desk.png"
         
@@ -22,8 +22,8 @@ const projects = [
         url: "https://taskman-peach.vercel.app",
         images:[
             "/tasker-desk.png",
-            "/tasker-mob1.png",
-            "/tasker-mob2.png"
+            "/tasker-mob.png"
+
         ],
         img: "/photoporto-desk.png"
 
@@ -35,9 +35,9 @@ const projects = [
         url: "https://blogger-ecru-delta.vercel.app",
         images:[
             "/blogger-desk1.png",
-            "/blogger-mob1.png",
-            "/blogger-mob2.png",
-            "/blogger-desk2.png"
+            "/blogger-mob.png"
+
+
         ],
         img: "/photoporto-desk.png"
 
