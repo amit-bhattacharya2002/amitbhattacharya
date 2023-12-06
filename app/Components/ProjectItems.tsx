@@ -29,7 +29,7 @@ const ProjectItems = ({projects}: Projects | any) => {
 
 
             <div className='w-[50%]'>
-              <a href={`${projects.url}`} target='_blank' className=''>
+              <Link href={`${projects.url}`} target='_blank' className=''>
                   <Image
                   src={mobView ? projects.images[1] : projects.images[0]}
                   width={mobView ? 800 : 1500}
@@ -38,7 +38,8 @@ const ProjectItems = ({projects}: Projects | any) => {
                   >
                   </Image>
               
-              </a>
+              </Link>
+
               <button onClick={e => (handleMobClick())}>{mobView? <div className='flex gap-2 items-center'><FaLaptop/> <h1>Laptop View</h1></div> : <div className='flex gap-2 items-center'><MdOutlinePhoneAndroid/> Mobile View</div>} </button>
             </div>
 
