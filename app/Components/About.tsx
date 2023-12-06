@@ -8,55 +8,37 @@ import AboutAd from './AboutAd'
 const About = () => {
     return (
         <AboutStyled id='about'>
-        <Reveal children={
-            
-            <>
+        <Reveal  x="-800" width='100%'>
+
+
+<>
             
             <h1 className='about border-b border-purple-500'>About Me</h1>
-            <Reveal children={
+            <Reveal  x="-500" width='100%'>
                 <>
                 <p className='mt-[1rem]'>Creative Web Designer incorporates rich media assets and extensive interactivity to engage and capture audiences. Develops novel architectures and navigation plans to differentiate final products from existing competition. Specializes in sites guaranteed to stand out among crowded industries and product categories.
                 Solid work ethic and strong self-discipline, built and nurtured by value-based education in a public school and early exposure to the competitive market of the IT sector.</p>
                 </>
-            } x="-500" width='100%'></Reveal>
+            </Reveal>
         </>
-        
-        
-        } x="-800" width='100%'></Reveal>
+        </Reveal>
 
         <Reveal
         
-        children={
-            <>
-                <AboutAd></AboutAd>
-
-            </>
-            // <div className='grid grid-cols-2 gap-4 grid-rows-4'>
-            //     <BentoBox
-            //         gridPosCol='1'
-            //         gridPosRow='2'
-            //         height='5rem'
-            //         width='100%'
-            //     />
-
-            //     <BentoBox
-            //         gridPosCol='2'
-            //         gridPosRow='1'
-            //         height='5rem'
-            //         width='`100%'
-
-            //     />
-            // </div>
-            
-        }
+        
 
         x='800'
 
-        width='100%'
+        width='100%'>
+            <>
+        <AboutAd></AboutAd>
+
+    </>
+    </Reveal>
         
 
 
-        />
+        
     </AboutStyled>
   )
 }

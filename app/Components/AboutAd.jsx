@@ -57,10 +57,10 @@ const AboutAd = () => {
     
             <div className="flex flex-col">
                 <div className=''>
-                    <TabButton selectTab={() => handleTabChange("skills")} active={tab ==="skills"} children={"Skills"}> Skills </TabButton>
+                    <TabButton selectTab={() => handleTabChange("skills")} active={tab ==="skills"}> Skills </TabButton>
                     
-                    <TabButton selectTab={() => handleTabChange("experience")} active={tab ==="experience"} children={"Experience"}> Experience </TabButton>
-                    <TabButton selectTab={() => handleTabChange("education")} active={tab ==="education"} children={"Education"}> Education </TabButton>
+                    <TabButton selectTab={() => handleTabChange("experience")} active={tab ==="experience"} > Experience </TabButton>
+                    <TabButton selectTab={() => handleTabChange("education")} active={tab ==="education"} > Education </TabButton>
                     
                     
                 </div>

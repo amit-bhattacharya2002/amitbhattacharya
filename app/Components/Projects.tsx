@@ -20,7 +20,7 @@ const Projects = () => {
         >
           <Carousel className='w-auto md:w-[90%] h-[80%] '>
               {projects.map((project, id) => (
-                <ProjectItems projects={project}></ProjectItems>
+                <ProjectItems key={project.id} projects={project}></ProjectItems>
                 ))}
           </Carousel>
         </Reveal>
