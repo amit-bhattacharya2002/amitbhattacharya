@@ -4,6 +4,10 @@ import { styled } from 'styled-components'
 import Reveal from './AnimateComponents/Reveal'
 import BentoBox from './BentoBox'
 import AboutAd from './AboutAd'
+import { Montserrat, Roboto, Lexend_Deca} from 'next/font/google'
+
+const lexendDeca = Lexend_Deca({subsets: ['latin']})
+
 
 const About = () => {
     return (
@@ -13,7 +17,7 @@ const About = () => {
 
 <>
             
-            <h1 className='about border-b border-purple-500 text-center sm:text-start w-full'>About Me</h1>
+            <h1 className={`about border-b ${lexendDeca.className} border-purple-500 text-center sm:text-start w-full`}>ABOUT ME</h1>
             <Reveal  x="-500" width='100%'>
                 <>
                 <p className='mt-[1rem]'>Creative Web Designer incorporates rich media assets and extensive interactivity to engage and capture audiences. Develops novel architectures and navigation plans to differentiate final products from existing competition. Specializes in sites guaranteed to stand out among crowded industries and product categories.

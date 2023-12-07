@@ -4,12 +4,13 @@ import React from 'react'
 import { styled } from 'styled-components'
 import Navbar from '../Components/Navbar'
 import Link from 'next/link'
-import { Montserrat, Roboto, Lexend_Deca} from 'next/font/google'
 import MobileNav from './MobileNav'
+import { Montserrat, Roboto, Lexend_Deca} from 'next/font/google'
 
 const lexendDeca = Lexend_Deca({subsets: ['latin']})
 
 const Header = () => {
+
   return (
    
       <HeaderStyled>
@@ -46,6 +47,13 @@ const HeaderStyled = styled.header`
     border: 2px solid #a855f7;
     /* color: #a855f7; */
     scroll-margin-top: 1rem;
+
+/* background: rgba(212, 212, 212, 0.354);
+border-radius: 16px;
+box-shadow: 0 4px 30px rgba(185, 185, 185, 0.1);
+backdrop-filter: blur(10.1px);
+-webkit-backdrop-filter: blur(10.1px); */
+/* border: 1px solid rgba(27, 27, 27, 0.45); */
 
     @media screen and (max-width: 480px){
       font-size: 0.5rem;

@@ -12,7 +12,7 @@ const lexendDeca = Lexend_Deca({subsets: ['latin']})
 const Projects = () => {
   return (
     <ProjectStyled id='projects'>
-          <h1 className={`${lexendDeca.className} sm:text-[1.5rem] text-center sm:text-start sm:ml-[5rem] m:auto  sm:w-[40%] block sm:mt-[10rem] sm:mb-[1rem] pb-4 border-b-2 border-purple-500`}>Projects</h1>
+          <h1 className={`${lexendDeca.className} sm:text-[1.5rem] text-center sm:text-start sm:ml-[5rem] m:auto  sm:w-[40%] block sm:mt-[10rem] sm:mb-[1rem] pb-4 border-b-2 border-purple-500`}>PROJECTS</h1>
 
         <Reveal
           x='-100'
