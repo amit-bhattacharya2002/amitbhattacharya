@@ -16,7 +16,7 @@ const roboto = Roboto({subsets: ['latin'], weight:["100", "300", "400", "500", "
 const lexendDeca = Lexend_Deca({subsets: ['latin']})
 const HeroSection = () => {
   const nameStyle= `
-  relative bottom-0 text-right text-xl ${montserrat.className}
+  relative bottom-0 sm:text-right sm:text-2xl text-center text-xl ${montserrat.className}
     
   `
   
@@ -24,7 +24,7 @@ const HeroSection = () => {
     const x = useTransform( scrollYProgress, [0,1] , [0, -8000])
   return (
     <HeroStyled id='amit' className=''>
-        <div className="name absolute z-50 top-[10rem] right-5 ">
+        <div className="name absolute z-50 top-[10rem]  sm:right-5 ">
             <NameStyled className={`${lexendDeca.className}  bg-gradient-to-r from-violet-500 to-purple-500 bg-clip-text text-transparent`}>AMIT BHATTACHARYA</NameStyled>
             <h2 className={`${nameStyle}`}>Full Stack Web Developer</h2>
         </div>
@@ -68,11 +68,18 @@ const HeroStyled = styled.div`
     scroll-snap-stop: always ;
     scroll-margin-top: 20rem;
 
-    @media screen and (max-width: 300px){
-      
+    @media screen and (max-width: 480px){
+      padding: 0;
     }
 
     /* overflow-y: scroll; */
+
+    .name{
+      @media screen and (max-width: 480px){
+        width: 100%;
+        text-align: center;
+      }
+    }
 
 `
 
@@ -89,8 +96,8 @@ const TitleStyled = styled(motion.h1)`
     transition: all 1s ease;
 
     @media screen and (max-width: 480px){
-      font-size: 2rem;
-      position: relative;
+      font-size: 5rem;
+      position: absolute;
     }
 `
 
@@ -99,6 +106,7 @@ const NameStyled = styled.h1`
     @media screen and (max-width: 480px){
       font-size: 2rem;
       position: relative;
+      margin: auto;
     }
 `
 export default HeroSection
