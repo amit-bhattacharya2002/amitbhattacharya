@@ -1,16 +1,17 @@
 "use client"
 
-import React from 'react'
+import React, { useContext } from 'react'
 import { styled } from 'styled-components'
 import Navbar from '../Components/Navbar'
 import Link from 'next/link'
 import MobileNav from './MobileNav'
 import { Montserrat, Roboto, Lexend_Deca} from 'next/font/google'
+import ActiveSectionContextProvider, { ActiveSectionContext, useActiveSectionContext } from '../Providers/ActiveSectionContext'
 
 const lexendDeca = Lexend_Deca({subsets: ['latin']})
 
 const Header = () => {
-
+  const {activeSection, setActiveSection} = useActiveSectionContext();
   return (
    
       <HeaderStyled>
@@ -18,7 +19,8 @@ const Header = () => {
             <Link href={"/#amit"}><div className={`logo bg-gradient-to-r from-violet-500 to-purple-500 bg-clip-text text-transparent text-xs md:text-xl`}><h1 className={`${lexendDeca.className}`}>AMIT BHATTACHARYA</h1></div></Link>
             <div className="nav ">
               <ul className={`flex justify-between gap-10 bg-gradient-to-r text-xs md:text-xl ${lexendDeca.className} from-violet-500 to-purple-500 bg-clip-text text-transparent`}>
-                <Link href={"/#about"}><li>About</li></Link>
+                <Link href={"/#about"}><li>About</li> {activeSection === "About" && (<span className='bg-gray-100 rounded-full absolute inset-0 -z-10' 
+                ></span>)} </Link>
                 <Link href={"/#projects"}><li>Projects</li></Link>
                 <Link href={"/#contact"}><li>Contact</li></Link>
               </ul>

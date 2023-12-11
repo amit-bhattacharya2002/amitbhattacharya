@@ -1,11 +1,11 @@
 "use client"
-import React, {useState, createContext} from "react";
+import React, {useState, createContext, useContext} from "react";
 
 type ActiveSectionContextType = {
     activeSection: "Contact" | "Amit" | "About" | "Projects";
     setActiveSection: React.Dispatch<React.SetStateAction<"Amit" | "About" | "Contact" | "Projects">>
 }
-const ActiveSectionContext = createContext<ActiveSectionContextType | null>(null);
+export const ActiveSectionContext = createContext<ActiveSectionContextType | null>(null);
 
 export default function ActiveSectionContextProvider({
     children,
@@ -20,4 +20,16 @@ export default function ActiveSectionContextProvider({
     }}>
         {children}
         </ActiveSectionContext.Provider>
+}
+
+export function useActiveSectionContext() {
+    const context = useContext(ActiveSectionContext)
+
+    if(context === null){
+        throw new Error(
+            "useActiveSectionContext must be used within ActiveSectionContextProvider"
+        )
+    }
+
+    return context;
 }
