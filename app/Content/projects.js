@@ -12,7 +12,8 @@ const projects = [
             "/photoporto-mob.png"
           
         ],
-        img: "/photoporto-desk.png"
+        img: "/photoporto-desk.png",
+        githubLink: "https://github.com/amit-bhattacharya2002/photoportfolio"
         
     },
     {
@@ -25,7 +26,8 @@ const projects = [
             "/tasker-mob.png"
 
         ],
-        img: "/photoporto-desk.png"
+
+        githubLink: "https://github.com/amit-bhattacharya2002/taskman"
 
     },
     {
@@ -39,7 +41,8 @@ const projects = [
 
 
         ],
-        img: "/photoporto-desk.png"
+
+        githubLink: "https://github.com/amit-bhattacharya2002/blogger"
 
         
     }

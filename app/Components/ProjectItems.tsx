@@ -6,6 +6,9 @@ import Image from 'next/image';
 import { FaLaptop } from "react-icons/fa";
 import { MdOutlinePhoneAndroid } from "react-icons/md";
 import { Montserrat, Roboto, Lexend_Deca} from 'next/font/google'
+import { FaGithub } from "react-icons/fa";
+import { IoLogoVercel } from "react-icons/io5";
+
 
 const lexendDeca = Lexend_Deca({subsets: ['latin']})
 const montserrat = Montserrat({subsets: ['latin']})
@@ -17,6 +20,7 @@ interface Projects{
     description: string;
     url: string;
     images: string[];
+    githubLink : string;
 }
 const ProjectItems = ({projects}: Projects | any) => {
   const [mobView, setMobileClicked] = useState(false)
@@ -45,6 +49,12 @@ const ProjectItems = ({projects}: Projects | any) => {
         <div className='sm:text-start text-center flex flex-col gap-6 w-[50%]'>
             <h1 className='text-xl sm:text-4xl'>{projects.name}</h1>
             <p className={`text-sm sm:text-xl ${montserrat.className}`}>{projects.description}</p>
+            <Link href={`${projects.githubLink}`} target='_blank' >
+              <p className='flex flex-row items-center sm:justify-start gap-4 justify-center'><FaGithub/> Github Link</p>
+            </Link>
+            <Link href={`${projects.url}`} target='_blank'>
+              <p className='flex flex-row items-center sm:justify-start gap-4 justify-center'><IoLogoVercel/> Website Link</p>
+            </Link>
         </div>
     </div>
   )
