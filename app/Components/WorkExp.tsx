@@ -35,7 +35,7 @@ const WorkExp = (props: Props) => {
     //   }
 
   return (
-    <div className={`h-[100vh] flex flex-row m-auto gap-2 justify-center w-screen overflow-y-hidden whitespace-nowrap `} ref={contRef}>
+    <div id='workexp' className={`h-[100vh] flex flex-row m-auto gap-2 justify-center w-screen overflow-y-hidden whitespace-nowrap `} ref={contRef}>
         
         <motion.div style={{y}} className='h-full relative'>
         <h1 className='text-[2rem] text-purple-500'>WORK EXPERIENCE</h1>

@@ -21,6 +21,8 @@ const Header = () => {
               <ul className={`flex justify-between gap-10 bg-gradient-to-r text-xs md:text-xl ${lexendDeca.className} from-violet-500 to-purple-500 bg-clip-text text-transparent`}>
                 <Link href={"/#about"}><li>ABOUT</li> {activeSection === "About" && (<span className='bg-gray-100 rounded-full absolute inset-0 -z-10' 
                 ></span>)} </Link>
+                <Link href={"/#workexp"}><li>WORK-XP</li> {activeSection === "About" && (<span className='bg-gray-100 rounded-full absolute inset-0 -z-10' 
+                ></span>)} </Link>
                 <Link href={"/#projects"}><li>PROJECTS</li></Link>
                 <Link href={"/#contact"}><li>CONTACT</li></Link>
               </ul>

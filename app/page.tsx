@@ -14,7 +14,7 @@ export default function Home() {
   return (
     <StyledMain>
         <HeroSection/>
-        <PageTransition title='ABOUT ME . ABOUT ME . ABOUT ME . ABOUT ME . ABOUT ME . ABOUT ME . ABOUT ME . ABOUT ME . ABOUT ME . ABOUT ME . ABOUT ME . ABOUT ME . ABOUT ME . ABOUT ME . ABOUT ME . ABOUT ME . ABOUT ME . ABOUT ME . ABOUT ME . ABOUT ME . ABOUT ME . ABOUT ME . ABOUT ME . ABOUT ME . ABOUT ME . ABOUT ME . ABOUT ME . ABOUT ME . ABOUT ME . ABOUT ME . ABOUT ME . ABOUT ME . ABOUT ME . ABOUT ME . ABOUT ME . ABOUT ME . ABOUT ME . ABOUT ME . ABOUT ME' style=' whitespace-nowrap animate-scrollT' divStyle='flex-col justify-center items-center gap-10'/>
+        <PageTransition id='about' title='ABOUT ME . ABOUT ME . ABOUT ME . ABOUT ME . ABOUT ME . ABOUT ME . ABOUT ME . ABOUT ME . ABOUT ME . ABOUT ME . ABOUT ME . ABOUT ME . ABOUT ME . ABOUT ME . ABOUT ME . ABOUT ME . ABOUT ME . ABOUT ME . ABOUT ME . ABOUT ME . ABOUT ME . ABOUT ME . ABOUT ME . ABOUT ME . ABOUT ME . ABOUT ME . ABOUT ME . ABOUT ME . ABOUT ME . ABOUT ME . ABOUT ME . ABOUT ME . ABOUT ME . ABOUT ME . ABOUT ME . ABOUT ME . ABOUT ME . ABOUT ME . ABOUT ME' style=' whitespace-nowrap animate-scrollT' divStyle='flex-col justify-center items-center gap-10'/>
         <AboutmeDetails/>
         <WorkExp/>
         <About/>

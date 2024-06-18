@@ -21,7 +21,7 @@ const abrilF = Abril_Fatface({subsets: ['latin'], weight:["400"]})
 
 const About = () => {
     return (
-        <AboutStyled id='about'>
+        <AboutStyled id='workexp'>
             {/* <div className="cont w-full relative h-full overflow-y-auto"> */}
             <div className='w-full sticky top-0 h-screen flex items-center' >
                     {/* <div className='w-full sticky top-0 bg-slate-300 m-10'>
