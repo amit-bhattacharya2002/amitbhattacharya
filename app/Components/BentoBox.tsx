@@ -1,5 +1,5 @@
 import React from 'react'
-
+import TextCarousel from './TextCarousel'
 interface Props{
     gridPosCol : string,
     gridPosRow: string,

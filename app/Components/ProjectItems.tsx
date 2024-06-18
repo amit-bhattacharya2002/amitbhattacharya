@@ -29,10 +29,10 @@ const ProjectItems = ({projects}: Projects | any) => {
     setMobileClicked(!mobView)
   }
   return (
-    <div className={`${lexendDeca.className} flex items-center flex-col md:flex-row gap-8`}>
+    <div className={`${lexendDeca.className} flex w-screen items-center flex-col md:flex-row gap-8`}>
 
 
-            <div className='w-[50%]'>
+            <div className='w-[50%] flex flex-col'>
               <Link href={`${projects.url}`} target='_blank' className='h-full p-5'>
                   <div>
                     <Image
@@ -43,7 +43,7 @@ const ProjectItems = ({projects}: Projects | any) => {
                   </div>
               </Link>
 
-              <button onClick={e => (handleMobClick())}>{mobView? (<div className='flex gap-2 items-center text-xs sm:text-l '><FaLaptop/> <h1>Laptop View</h1></div>) : (<div className='flex gap-2 items-center text-xs sm:text-l'><MdOutlinePhoneAndroid/> Mobile View</div>)} </button>
+              <button onClick={e => (handleMobClick())}>{mobView? (<div className='flex gap-2 justify-center mx-auto items-center text-xs sm:text-l '><FaLaptop/> <h1>Laptop View</h1></div>) : (<div className='flex gap-2 items-center justify-center mx-auto text-xs sm:text-l'><MdOutlinePhoneAndroid/> Mobile View</div>)} </button>
             </div>
 
         <div className='sm:text-start text-center flex flex-col gap-6 w-[50%]'>

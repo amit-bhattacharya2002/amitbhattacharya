@@ -5,13 +5,22 @@ import About from './Components/About'
 import { styled } from 'styled-components'
 import Projects from './Components/Projects'
 import Contact from './Components/Contact'
+
+import PageTransition from './Components/PageTransition'
+import AboutmeDetails from './Components/AboutmeDetails'
+import WorkExp from './Components/WorkExp'
+
 export default function Home() {
   return (
     <StyledMain>
         <HeroSection/>
+        <PageTransition title='ABOUT ME . ABOUT ME . ABOUT ME . ABOUT ME . ABOUT ME . ABOUT ME . ABOUT ME . ABOUT ME . ABOUT ME . ABOUT ME . ABOUT ME . ABOUT ME . ABOUT ME . ABOUT ME . ABOUT ME . ABOUT ME . ABOUT ME . ABOUT ME . ABOUT ME . ABOUT ME . ABOUT ME . ABOUT ME . ABOUT ME . ABOUT ME . ABOUT ME . ABOUT ME . ABOUT ME . ABOUT ME . ABOUT ME . ABOUT ME . ABOUT ME . ABOUT ME . ABOUT ME . ABOUT ME . ABOUT ME . ABOUT ME . ABOUT ME . ABOUT ME . ABOUT ME' style=' whitespace-nowrap animate-scrollT' divStyle='flex-col justify-center items-center gap-10'/>
+        <AboutmeDetails/>
+        <WorkExp/>
         <About/>
         <Projects/>
         <Contact/>
+        {/* <Carousel/> */}
     </StyledMain>
   )
 }

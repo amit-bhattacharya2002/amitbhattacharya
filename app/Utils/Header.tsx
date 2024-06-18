@@ -19,10 +19,10 @@ const Header = () => {
             <Link href={"/#amit"}><div className={`logo bg-gradient-to-r from-violet-500 to-purple-500 bg-clip-text text-transparent text-xs md:text-xl`}><h1 className={`${lexendDeca.className}`}>AMIT BHATTACHARYA</h1></div></Link>
             <div className="nav ">
               <ul className={`flex justify-between gap-10 bg-gradient-to-r text-xs md:text-xl ${lexendDeca.className} from-violet-500 to-purple-500 bg-clip-text text-transparent`}>
-                <Link href={"/#about"}><li>About</li> {activeSection === "About" && (<span className='bg-gray-100 rounded-full absolute inset-0 -z-10' 
+                <Link href={"/#about"}><li>ABOUT</li> {activeSection === "About" && (<span className='bg-gray-100 rounded-full absolute inset-0 -z-10' 
                 ></span>)} </Link>
-                <Link href={"/#projects"}><li>Projects</li></Link>
-                <Link href={"/#contact"}><li>Contact</li></Link>
+                <Link href={"/#projects"}><li>PROJECTS</li></Link>
+                <Link href={"/#contact"}><li>CONTACT</li></Link>
               </ul>
                     </div>
           </div>
@@ -49,6 +49,7 @@ const HeaderStyled = styled.header`
     border: 2px solid #a855f7;
     /* color: #a855f7; */
     scroll-margin-top: 1rem;
+    background-color: black;
 
 /* background: rgba(212, 212, 212, 0.354);
 border-radius: 16px;

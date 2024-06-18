@@ -3,7 +3,7 @@
 @tailwind utilities;
 
 html{
-  scroll-snap-type: y mandatory;
+  /* scroll-snap-type: y mandatory; */
   /* scroll-padding-bottom: 2.5vh; */
 }
 :root {
@@ -34,5 +34,79 @@ body {
     margin: 0;
 
     overflow-x: hidden;
+    background-color: black;
+    background-image: 
+    
+    linear-gradient(
+        
+        #0b0b12 .05rem,
+        transparent .05rem
+    ),
+    linear-gradient(
+        90deg,
+        #0b0b12 .05rem,
+        transparent .05rem
+    );
+    background-size: 0.5rem 0.5rem;
 }
 
+.scrollText{
+  white-space: nowrap;
+  overflow: hidden;
+
+  position: absolute;
+  animation: scrollT 300s linear infinite;
+}
+
+
+/* .scrollDelay{
+  padding-left: 100%;
+  animation-delay: 7s;
+} */
+@keyframes scrollT {
+  0% {
+    transform: translate(0, 0);
+  }
+  100% {
+    transform: translate(-100%, 0);
+  }
+}
+
+
+.scrollText:hover  {
+  animation-play-state: paused;
+}
+.typewriter {
+  color: #fff;
+  font-family: monospace;
+
+  height: auto;
+  overflow: hidden; /* Ensures the content is not revealed until the animation */
+  /* border-right: .15em solid orange; The typwriter cursor */
+  white-space: wrap; /* Keeps the content on a single line */
+  margin: 0 ; /*Gives that scrolling effect as the typing happens*/
+  letter-spacing: .05em; /* Adjust as needed */
+  /* animation: 
+    typing 5s steps(100, end),
+    blink-caret 0.75s step-end infinite; */
+
+    
+    
+}
+
+/* The typing effect */
+@keyframes typing {
+  from { width: 0 }
+  to { width: 100% }
+}
+
+/* The typewriter cursor effect */
+@keyframes blink-caret {
+  from, to { border-color: transparent }
+  50% { border-color: orange }
+}
+
+
+.expTitle{
+  font-family: 'Roboto', sans-serif;
+}

@@ -1,10 +1,14 @@
 import type { Metadata } from 'next'
 import { Inter } from 'next/font/google'
+import { Roboto } from 'next/font/google'
 import './globals.css'
 import Header from './Utils/Header'
 import Footer from './Utils/Footer'
 import MobileNav from './Utils/MobileNav'
 import ActiveSectionContextProvider from './Providers/ActiveSectionContext'
+import "slick-carousel/slick/slick.css"; 
+import "slick-carousel/slick/slick-theme.css";
+
 
 const inter = Inter({ subsets: ['latin'] })
 

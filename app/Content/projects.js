@@ -8,11 +8,11 @@ const projects = [
         description: "Photography Portfolio Website, made using React JS, Typescript, Tailwind CS and Framer Motion",
         url: "https://photoportfolio-mu.vercel.app",
         images:[
-            "/photoporto-desk.png",
-            "/photoporto-mob.png"
+            "/photoporto-nobg.png",
+            "/photoporto-mob-nobg.png"
           
         ],
-        img: "/photoporto-desk.png",
+        img: "/photoporto-desk-removebg-preview.png",
         githubLink: "https://github.com/amit-bhattacharya2002/photoportfolio"
         
     },
@@ -22,8 +22,8 @@ const projects = [
         description: "Task management app with user authentication, made using Next JS 14, Typescript, Tailwind CS, Prisma, with Clerk Authentication",
         url: "https://taskman-peach.vercel.app",
         images:[
-            "/tasker-desk.png",
-            "/tasker-mob.png"
+            "/tasker-nobg.png",
+            "/tasker-mob-nobg.png"
 
         ],
 
@@ -36,8 +36,8 @@ const projects = [
         description: "Blog posting website with user authentication, made using Next JS 14, Typescript, Tailwind CS, Prisma, with Next JS Authentication",
         url: "https://blogger-ecru-delta.vercel.app",
         images:[
-            "/blogger-desk1.png",
-            "/blogger-mob.png"
+            "/blogger-nobg.png",
+            "/blogger-mob-nobg.png"
 
 
         ],

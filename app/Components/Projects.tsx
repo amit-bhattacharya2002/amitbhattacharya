@@ -1,48 +1,55 @@
 "use client"
 import React from 'react'
+import { useRef } from 'react'
 import { Carousel } from 'react-responsive-carousel'
 import { styled } from 'styled-components'
 import ProjectItems from './ProjectItems'
 import projects from '../Content/projects'
-import Reveal from './AnimateComponents/Reveal'
+
 import { Montserrat, Roboto, Lexend_Deca} from 'next/font/google'
+import { useScroll, useTransform, motion } from 'framer-motion'
 
 const lexendDeca = Lexend_Deca({subsets: ['latin']})
 
 const Projects = () => {
+  const targetRef = useRef<HTMLDivElement | null>(null)
+  const {scrollYProgress} = useScroll({
+    target: targetRef,
+  })
+  const x = useTransform(scrollYProgress, [0, 1], ['35%', '-100%'])
   return (
-    <ProjectStyled id='projects'>
-          <h1 className={`${lexendDeca.className} sm:text-[1.5rem] text-center sm:text-start sm:ml-[5rem] m:auto  sm:w-[40%] block sm:mt-[10rem] sm:mb-[1rem] pb-4 border-b-2 border-purple-500`}>PROJECTS</h1>
+    <ProjectStyled id='projects'ref={targetRef}>
+        {/* border-b-2 border-purple-500 */}
 
-        <Reveal
-          x='-100'
-          width='auto'
-        >
-          <Carousel className='w-auto md:w-[90%] h-[80%] '>
-              {projects.map((project, id) => (
-                <ProjectItems key={project.id} projects={project}></ProjectItems>
-                ))}
-          </Carousel>
-        </Reveal>
+          <h1 className={`${lexendDeca.className} sm:text-[2rem] text-purple-500 text-center sm:text-center sm:ml-[0rem] m:auto  sm:w-[100%] block sm:mt-[10rem] sm:mb-[1rem] pb-4 `}>PROJECTS</h1>
+        <div className='sticky top-[5%] h-screen overflow-hidden flex items-center' >
+
+          <motion.div style={{x}} className="flex gap-[100px] will-change-transform" >
+
+         {projects.map((project: any, id: number) => (<ProjectItems projects={project} key={project.id}/>))}
+
+          </motion.div>
+
+        </div>
 
     </ProjectStyled>
   )
 }
 
 const ProjectStyled = styled.div`
-    height: 100vh;
+    height: 300vh;
     padding: 2rem;
     padding-top: 2rem;
     padding-bottom: 0%;
-    scroll-snap-align: start;
+    position: relative;
     transition: all 2s ease;
-    scroll-snap-stop: always ;
-    background-color: white;
-    
-    color: black;
+
+//    top: 0;
+    /* background-color: white; */
+    color: white;
     /* scroll-margin-top: 2.5vh; */
 
-    /* overflow-y: scroll; */
+    /* overflow-x: scroll; */
 
     @media screen and (max-width: 480px){
       font-size: 1rem;

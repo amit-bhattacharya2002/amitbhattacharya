@@ -1,18 +1,89 @@
 "use client"
 import React from 'react'
 import { styled } from 'styled-components'
-import Reveal from './AnimateComponents/Reveal'
+
 import BentoBox from './BentoBox'
 import AboutAd from './AboutAd'
 import { Montserrat, Roboto, Lexend_Deca} from 'next/font/google'
+import ExpComp from './AnimateComponents/ExpComp'
+import { Abril_Fatface } from 'next/font/google'
 
+
+import {CenterDirectorCard, LeadTeacherCard, TeacherPartTimeCard, WebDesignerCard} from './AnimateComponents/ExpCardComp'
+
+const roboto = Roboto({subsets: ['latin'], weight:["100", "300", "400", "500", "700", "900"]})
 const lexendDeca = Lexend_Deca({subsets: ['latin']})
+
+const abrilF = Abril_Fatface({subsets: ['latin'], weight:["400"]})
+
+
 
 
 const About = () => {
     return (
         <AboutStyled id='about'>
-        <Reveal  x="-800" width='100%'>
+            {/* <div className="cont w-full relative h-full overflow-y-auto"> */}
+            <div className='w-full sticky top-0 h-screen flex items-center' >
+                    {/* <div className='w-full sticky top-0 bg-slate-300 m-10'>
+                
+                    </div>
+                    <div className="w-full h-full">
+                        <div className='w-auto h-full bg-slate-500 m-10'>
+                        vsfdvs
+                        </div>
+                        <div className='w-auto h-full bg-slate-500 m-10'>
+                        vdsvsdsdv
+                        </div>
+                        <div className='w-auto h-full bg-slate-500 m-10'>
+                        vdsvwfq
+                        </div>
+                    </div> */}
+                    <div className="w-full  relative m-20 aspect-square">
+                        <TeacherPartTimeCard id='partT'/>
+                        <LeadTeacherCard id='leadT'/>
+                        <CenterDirectorCard id='centerD'/>
+                        <WebDesignerCard id='webD'/>
+
+                    </div>
+                </div>
+                <div className='w-full  py-[40vh]' >
+                    {/* <div className='w-full sticky top-0 bg-slate-300 m-10'>
+                
+                    </div>
+                    <div className="w-full h-full">
+                        <div className='w-auto h-full bg-slate-500 m-10'>
+                        vsfdvs
+                        </div>
+                        <div className='w-auto h-full bg-slate-500 m-10'>
+                        vdsvsdsdv
+                        </div>
+                        <div className='w-auto h-full bg-slate-500 m-10'>
+                        vdsvwfq
+                        </div>
+                    </div> */}
+                    <ul className='flex flex-col justify-between'>
+                        <li className={`${lexendDeca.className}`}>
+                        <ExpComp id='centerD'>Center Director <br /> <span className='text-2xl '>Code Ninjas - Port Coquitlam, BC</span><br/> <span className='text-sm'> 01/2024 to current</span> </ExpComp>
+                        </li>
+                        <li className={`${lexendDeca.className}`}>
+                        <ExpComp id='leadT'>Lead Teacher - JavaScript <br /> <span className='text-2xl '>Code Ninjas - Port Coquitlam, BC</span><br/> <span className='text-sm'> 02/2023 to 12/2023</span> </ExpComp>
+                        </li>
+                        <li className={`${lexendDeca.className}`}>
+                            <ExpComp id='partT'>Teacher (Part-Time) <br /> <span className='text-2xl '>Code Ninjas - Port Coquitlam, BC</span><br/> <span className='text-sm'> 01/2022 to 02/2023</span> </ExpComp>
+                        </li>
+                        <li className={`${lexendDeca.className}`}>
+                        <ExpComp id='webD'>Web Designer <br /> <span className='text-2xl '>Destination Global Educational Services - Burnaby, BC</span> <span className='text-sm'> 03/2019 to 01/2020</span></ExpComp>
+                        </li>
+                        <li>
+                        </li>
+                    </ul>
+                </div>
+                
+                
+            {/* </div> */}
+            
+            
+        {/* <Reveal  x="-800" width='100%'>
 
 
 <>
@@ -39,7 +110,7 @@ const About = () => {
 
     </>
     </Reveal>
-        
+         */}
 
 
         
@@ -48,17 +119,33 @@ const About = () => {
 }
 
 const AboutStyled = styled.div`
-    min-height: 100vh;
-    padding-top: 10rem;
+    /* height: auto; */
+    /* margin: 10px; */
+    /* padding-top: 10rem;
     padding-left: 15rem;
-    padding-right: 15rem;
-    width: 100%;
-    /* overflow-y: scroll; */
+    padding-right: 15rem; */
+    /* overflow-y: auto; */
+
+    /* position: relative; */
+    max-width: 100%;
+    /* position: relative; */
+    align-items: start;
     display: flex;
-    scroll-snap-align: start;
+    gap: 2rem;
+    /* scroll-snap-align: start; */
     transition: all 2s ease;
-    scroll-snap-stop: always ;
+    /* scroll-snap-stop: always ; */
     
+    /* background-position: 0.5 0.5, 0 0, 0 0; */
+
+    //--s: 50px; /* control the size */
+  
+  /* --_g: #0000 90deg,#0d0d10 0;
+  background: 
+    conic-gradient(from 90deg at 2px 2px,var(--_g))
+     0 0/var(--s) var(--s),
+    conic-gradient(from 90deg at 1px 1px,var(--_g))
+     0 0/calc(var(--s)/5) calc(var(--s)/5); */
     /* scroll-margin-top: 2.5vh; */
 
     .about{

@@ -7,7 +7,7 @@ export default function Contact() {
     async function handleSubmit(event) {
         event.preventDefault();
         const formData = new FormData(event.target);
-
+        const count = 0;
         formData.append("access_key", "7dc83694-8143-465a-85cc-65a4b7decc9f");
 
         const object = Object.fromEntries(formData);
@@ -24,12 +24,14 @@ export default function Contact() {
         const result = await response.json();
         if (result.success) {
             console.log(result);
+            alert("Message sent successfully!");
+            document.getElementById('contactFrom').reset();
         }
     }
 
   return (
     <> 
-      <form className="h-full w-[80%] flex flex-col gap-5 m-auto mt-5 sm:mt-[10rem] scroll-m-[10rem] text-purple-500 p-4 " onSubmit={handleSubmit}>
+      <form id='contactFrom' className="h-full w-[80%] flex flex-col gap-5 m-auto mt-5 sm:mt-[10rem] scroll-m-[10rem] text-purple-500 p-4 " onSubmit={handleSubmit}>
         <h1 className={`${lexendDeca.className} text-3xl border-b-2 pb-4 border-b-purple-500`}>GET IN TOUCH</h1>
         <input type="text" className="p-4 bg-black border border-purple-500" name="name" placeholder="Enter your name"/>
         <input type="email"  className="p-4 bg-black border border-purple-500" name="email" placeholder="Enter your email"/>
