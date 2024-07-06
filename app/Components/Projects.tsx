@@ -16,7 +16,7 @@ const Projects = () => {
   const {scrollYProgress} = useScroll({
     target: targetRef,
   })
-  const x = useTransform(scrollYProgress, [0, 1], ['35%', '-100%'])
+  const x = useTransform(scrollYProgress, [0, 1], ['35%', '-70%'])
   return (
     <ProjectStyled id='projects'ref={targetRef}>
         {/* border-b-2 border-purple-500 */}

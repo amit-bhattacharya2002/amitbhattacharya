@@ -104,10 +104,10 @@ export const CenterDirectorCard = ({id} : CardProps) => {
 export const WebDesignerCard = ({id} : CardProps) => {
     return(
         <ExpCardComp id={id}  style='flex flex-col items-center py-[20%] gap-5'>
-            <Image src={dges} width={600} height={600} className='mx-auto' alt='dges logo'/>
+            <Image src={dges} width={600} height={600} className='' alt='dges logo'/>
             
             <ul className=''>
-            {respList[4].map((resp, index) => (
+            {respList[3].map((resp, index) => (
                 <li key={index} className='text-start typewriter py-3'> {resp}</li>
             ))}
 

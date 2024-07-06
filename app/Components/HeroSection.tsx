@@ -57,6 +57,10 @@ const HeroSection = () => {
               <Link href="https://acrobat.adobe.com/id/urn:aaid:sc:VA6C2:73ae8227-d138-4317-8781-e3ba612725bf" target='_blank' className='sm:text-right sm:m-0 mx-20 sm:text-xl text-center text-l  border p-5 border-slate-500 rounded-xl  text-slate-500 hover:border-purple-500 hover:text-purple-500 transition-all duration-500 ' >Download CV</Link>
               {/* bg-gradient-to-r from-indigo-500 to-purple-500 */}
             </div>
+
+            <div className='sm:hidden mt-[5rem]'>
+          <h1 className='relative animate-scrollT text-slate-500 will-change-transform text-4xl w-full       '>Developer.Designer.Developer.Designer.Developer.Designer</h1>
+        </div>
         </div>
         <div className='flex'>
         {/* style={{x}} 
@@ -86,9 +90,11 @@ const HeroSection = () => {
 
               
           {/* ${scrollYProgress != null? 'scrollText' : ''}` */}
-          <TitleStyled style={{x}} className={`bg-gradient-to-r from-slate-500 to-slate-700 bg-clip-text text-transparent will-change-transform	 hover:animate-scrollT`}>
+          <TitleStyled style={{x}} className={`bg-gradient-to-r from-slate-500 to-slate-700 bg-clip-text text-transparent will-change-transform	 hover:animate-scrollT hidden sm:block`}>
         Developer.Designer.Developer.Designer.Developer.Designer.Developer.
         </TitleStyled>
+
+        
           {/* style={{x}} */}
           
         </div>
