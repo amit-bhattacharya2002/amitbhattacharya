@@ -4,7 +4,7 @@ import { styled } from 'styled-components'
 import { useScroll, useTransform, motion } from 'framer-motion'
 import { TypeAnimation } from 'react-type-animation'
 import { Abril_Fatface } from 'next/font/google'
-import { Montserrat, Roboto, Lexend_Deca} from 'next/font/google'
+import { Montserrat, Roboto, Lexend_Deca, Kode_Mono, Kanit, Josefin_Sans} from 'next/font/google'
 import Link from 'next/link'
 
 // import localFont from 'next/font/local'
@@ -12,6 +12,9 @@ import Link from 'next/link'
 // const lemonMilk = localFont({ src: '@/public/fonts/LEMONMILK-Bold.otf' })
 
 const abrilF = Abril_Fatface({subsets: ['latin'], weight:["400"]})
+const kanit = Kanit({subsets: ['latin'], weight:["400"]});
+const josefinSans = Josefin_Sans({subsets: ['latin'], weight:["400"]});
+const kodeMono = Kode_Mono({subsets: ['latin']})
 const montserrat = Montserrat({subsets: ['latin']})
 const roboto = Roboto({subsets: ['latin'], weight:["100", "300", "400", "500", "700", "900"]})
 const lexendDeca = Lexend_Deca({subsets: ['latin']})
@@ -90,7 +93,7 @@ const HeroSection = () => {
 
               
           {/* ${scrollYProgress != null? 'scrollText' : ''}` */}
-          <TitleStyled style={{x}} className={`bg-gradient-to-r from-slate-500 to-slate-700 bg-clip-text text-transparent will-change-transform	 hover:animate-scrollT hidden sm:block`}>
+          <TitleStyled style={{x}} className={`bg-gradient-to-r from-slate-500 to-slate-700 bg-clip-text text-transparent will-change-transform ${lexendDeca.className}	 hover:animate-scrollT hidden sm:block`}>
         Developer.Designer.Developer.Designer.Developer.Designer.Developer.
         </TitleStyled>
 
