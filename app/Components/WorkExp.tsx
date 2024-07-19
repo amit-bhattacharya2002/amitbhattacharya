@@ -1,3 +1,5 @@
+"use client"
+
 import React from 'react'
 import { Lexend_Deca } from 'next/font/google'
 import { useTransform, useScroll, motion, MotionStyle } from 'framer-motion'
@@ -45,10 +47,10 @@ const WorkExp = (props: Props) => {
         <h1 className='text-[2rem] text-purple-500'>WORK EXPERIENCE</h1>
         <h1 className='text-[2rem] text-purple-500'>WORK EXPERIENCE</h1>
         <h1 className='text-[2rem] text-purple-500'>WORK EXPERIENCE</h1>
-        <h1 className='text-[2rem] text-purple-500'>WORK EXPERIENCE</h1>
-        <h1 className='text-[2rem] text-purple-500'>WORK EXPERIENCE</h1>
-        <h1 className='text-[2rem] text-purple-500'>WORK EXPERIENCE</h1>
         <h1 className='text-[2rem] text-white'>WORK EXPERIENCE</h1>
+        <h1 className='text-[2rem] text-purple-500'>WORK EXPERIENCE</h1>
+        <h1 className='text-[2rem] text-purple-500'>WORK EXPERIENCE</h1>
+        <h1 className='text-[2rem] text-purple-500'>WORK EXPERIENCE</h1>
         <h1 className='text-[2rem] text-purple-500'>WORK EXPERIENCE</h1>
         <h1 className='text-[2rem] text-purple-500'>WORK EXPERIENCE</h1>
         <h1 className='text-[2rem] text-purple-500'>WORK EXPERIENCE</h1>
@@ -70,10 +72,10 @@ const WorkExp = (props: Props) => {
 <h1 className='text-[2rem] text-purple-500'>WORK EXPERIENCE</h1>
 <h1 className='text-[2rem] text-purple-500'>WORK EXPERIENCE</h1>
 <h1 className='text-[2rem] text-purple-500'>WORK EXPERIENCE</h1>
+<h1 className='text-[2rem] text-white '>WORK EXPERIENCE</h1>
 <h1 className='text-[2rem] text-purple-500'>WORK EXPERIENCE</h1>
 <h1 className='text-[2rem] text-purple-500'>WORK EXPERIENCE</h1>
 <h1 className='text-[2rem] text-purple-500'>WORK EXPERIENCE</h1>
-<h1 className='text-[2rem] text-white'>WORK EXPERIENCE</h1>
 <h1 className='text-[2rem] text-purple-500'>WORK EXPERIENCE</h1>
 <h1 className='text-[2rem] text-purple-500'>WORK EXPERIENCE</h1>
 <h1 className='text-[2rem] text-purple-500'>WORK EXPERIENCE</h1>
@@ -96,10 +98,10 @@ const WorkExp = (props: Props) => {
 <h1 className='text-[2rem] text-purple-500'>WORK EXPERIENCE</h1>
 <h1 className='text-[2rem] text-purple-500'>WORK EXPERIENCE</h1>
 <h1 className='text-[2rem] text-purple-500'>WORK EXPERIENCE</h1>
-<h1 className='text-[2rem] text-purple-500'>WORK EXPERIENCE</h1>
-<h1 className='text-[2rem] text-purple-500'>WORK EXPERIENCE</h1>
-<h1 className='text-[2rem] text-purple-500'>WORK EXPERIENCE</h1>
 <h1 className='text-[2rem] text-white'>WORK EXPERIENCE</h1>
+<h1 className='text-[2rem] text-purple-500'>WORK EXPERIENCE</h1>
+<h1 className='text-[2rem] text-purple-500'>WORK EXPERIENCE</h1>
+<h1 className='text-[2rem] text-purple-500'>WORK EXPERIENCE</h1>
 <h1 className='text-[2rem] text-purple-500'>WORK EXPERIENCE</h1>
 <h1 className='text-[2rem] text-purple-500'>WORK EXPERIENCE</h1>
 <h1 className='text-[2rem] text-purple-500'>WORK EXPERIENCE</h1>
@@ -122,10 +124,10 @@ const WorkExp = (props: Props) => {
 <h1 className='text-[2rem] text-purple-500'>WORK EXPERIENCE</h1>
 <h1 className='text-[2rem] text-purple-500'>WORK EXPERIENCE</h1>
 <h1 className='text-[2rem] text-purple-500'>WORK EXPERIENCE</h1>
-<h1 className='text-[2rem] text-purple-500'>WORK EXPERIENCE</h1>
-<h1 className='text-[2rem] text-purple-500'>WORK EXPERIENCE</h1>
-<h1 className='text-[2rem] text-purple-500'>WORK EXPERIENCE</h1>
 <h1 className='text-[2rem] text-white'>WORK EXPERIENCE</h1>
+<h1 className='text-[2rem] text-purple-500'>WORK EXPERIENCE</h1>
+<h1 className='text-[2rem] text-purple-500'>WORK EXPERIENCE</h1>
+<h1 className='text-[2rem] text-purple-500'>WORK EXPERIENCE</h1>
 <h1 className='text-[2rem] text-purple-500'>WORK EXPERIENCE</h1>
 <h1 className='text-[2rem] text-purple-500'>WORK EXPERIENCE</h1>
 <h1 className='text-[2rem] text-purple-500'>WORK EXPERIENCE</h1>

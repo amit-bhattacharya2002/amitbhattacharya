@@ -29,7 +29,7 @@ const HeroSection = () => {
   return (
 
     <HeroStyled id='amit' className=''>
-        <div className="name absolute z-50 top-[10rem]  sm:right-[10rem] ">
+        <div className="name absolute z-50 sm:top-[10rem]  sm:right-[10rem] top-[20rem] ">
             <NameStyled className={`${lexendDeca.className}  bg-gradient-to-r from-violet-500 to-purple-500 bg-clip-text text-transparent`}>AMIT BHATTACHARYA</NameStyled>
             <div className="flex justify-between align-center flex-col sm:flex-row-reverse">
               <h2 className={`${nameStyle}`}>
@@ -59,7 +59,7 @@ const HeroSection = () => {
             </div>
 
             <div className='sm:hidden mt-[5rem]'>
-          <h1 className='relative animate-scrollT text-slate-500 will-change-transform text-4xl w-full       '>Developer.Designer.Developer.Designer.Developer.Designer</h1>
+          <h1 className='static text-center text-slate-500 will-change-transform text-4xl w-full'>Developer.Designer</h1>
         </div>
         </div>
         <div className='flex'>
@@ -106,6 +106,7 @@ const HeroSection = () => {
 const HeroStyled = styled.div`
     min-height: 100vh;
     padding: 2rem;
+
     overflow: hidden;
     padding-right: 0;
     width: 100%;
@@ -120,6 +121,7 @@ const HeroStyled = styled.div`
 
     @media screen and (max-width: 480px){
       padding: 0;
+      padding-top: 5rem;
       position: static;
 
     }
