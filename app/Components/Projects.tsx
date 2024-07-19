@@ -59,9 +59,11 @@ const ProjectStyled = styled.div`
     @media screen and (max-width: 480px){
       font-size: 1rem;
       width: 100vw;
-    padding: 1rem;
+    padding: 0.5rem;
+    
     flex-direction: column;
       padding-top: 5rem;
+    
     /* text-align: center; */
     }
 
