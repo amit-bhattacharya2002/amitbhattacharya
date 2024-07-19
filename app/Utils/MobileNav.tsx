@@ -19,13 +19,16 @@ const MobileNav = () => {
                     <li>AMIT BHATTACHARYA</li>
                 </Link>
                 <Link href={"/#about"}>
-                    <li>About Me</li>
+                    <li>ABOUT ME</li>
                 </Link>
                 <Link href={"/#projects"}>
-                    <li>Projects</li>
+                    <li>PROJECTS</li>
                 </Link>
                 <Link href={"/#contact"}>
-                    <li>Contact Me</li>
+                    <li>CONTACT ME</li>
+                </Link>
+                <Link href={"/#workexp"}>
+                    <li>WORK XP</li>
                 </Link>
             </ul>
         </nav>

@@ -22,7 +22,7 @@ const Projects = () => {
         {/* border-b-2 border-purple-500 */}
 
           <h1 className={`${lexendDeca.className} sm:text-[2rem] text-purple-500 text-center sm:text-center sm:ml-[0rem] m:auto  sm:w-[100%] block sm:mt-[10rem] sm:mb-[1rem] pb-4 `}>PROJECTS</h1>
-        <div className='sticky top-[5%] h-screen overflow-hidden flex items-center' >
+        <div className=' static sm:flex-row flex-col sm:sticky top-[5%] h-screen overflow-hidden flex items-center' >
 
           <motion.div style={{x}} className="flex gap-[100px] will-change-transform" >
 
@@ -55,6 +55,7 @@ const ProjectStyled = styled.div`
       font-size: 1rem;
       width: 100vw;
     padding: 1rem;
+    
     flex-direction: column;
       padding-top: 5rem;
     /* text-align: center; */
