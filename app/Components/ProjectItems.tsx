@@ -32,7 +32,7 @@ const ProjectItems = ({projects}: Projects | any) => {
     <div className={`${lexendDeca.className} sm:border-none border rounded border-purple-500 flex sm:w-screen w-full items-center flex-col sm:my-0 mt-8 sm:flex-row gap sm:gap-8 p-4`}>
 
 
-            <div className='w-full sm:w-[50%] flex flex-col'>
+            <div className='w-full sm:w-[50%] mb-8 flex flex-col pb-8 border-b border-b-slate-500'>
               <Link href={`${projects.url}`} target='_blank' className='h-full p-0 sm:p-5'>
                   <div>
                     <Image
