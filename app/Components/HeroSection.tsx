@@ -29,7 +29,7 @@ const HeroSection = () => {
   return (
 
     <HeroStyled id='amit' className=''>
-        <div className="name absolute z-50 sm:top-[10rem]  sm:right-[10rem] top-[20rem] ">
+        <div className="name absolute z-50 sm:top-[10rem]  sm:right-[10rem] top-[10rem] ">
             <NameStyled className={`${lexendDeca.className}  bg-gradient-to-r from-violet-500 to-purple-500 bg-clip-text text-transparent`}>AMIT BHATTACHARYA</NameStyled>
             <div className="flex justify-between align-center flex-col sm:flex-row-reverse">
               <h2 className={`${nameStyle}`}>

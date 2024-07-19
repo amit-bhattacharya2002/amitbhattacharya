@@ -42,9 +42,10 @@ const respList = {
 
 const WorkCarousel = (props: Props) => {
   return (
-    <div className='sm:hidden '>
-        <div className="gallery">
-            <div className="centd">
+    <div className='sm:hidden pt-[5rem]'>
+        <h1 className={`${lexendDeca.className} text-purple-500 h-[5rem] m-auto w-fit`}>WORK EXPERIENCE</h1>
+        <div className="gallery flex flex-col gap-4">
+            <div className="centd mx-2 rounded py-4 border border-purple-500">
                 <div className={' h-full w-full flex flex-col items-center p-[10%] gap-1'}>
                 <Image className='' src={codeninjas} width={200} height={200} alt='codeninjas logo'/>
                     <ul className=''>
@@ -60,7 +61,7 @@ const WorkCarousel = (props: Props) => {
                             </h1>
             </div>
 
-            <div className="leadt">
+            <div className="leadt mx-2 rounded py-4 border border-purple-500">
             <div className={' h-full w-full flex flex-col items-center p-[10%] gap-1'}>
                 <Image className='' src={codeninjas} width={200} height={200} alt='codeninjas logo'/>
                     <ul className=''>
@@ -75,7 +76,7 @@ const WorkCarousel = (props: Props) => {
                             <div id='centerD'>Lead Teacher - JavaScript <br /> <span className='text-2xl '>Code Ninjas - Port Coquitlam, BC</span><br/> <span className='text-sm'> 02/2023 to 12/2023</span> </div>
                             </h1>
             </div>
-            <div className="teachp">
+            <div className="teachp mx-2 rounded py-4 border border-purple-500">
             <div className={' h-full w-full flex flex-col items-center p-[10%] gap-1'}>
                 <Image className='' src={codeninjas} width={200} height={200} alt='codeninjas logo'/>
                     <ul className=''>
@@ -90,7 +91,7 @@ const WorkCarousel = (props: Props) => {
                             <div id='centerD'>Teacher (Part-Time)  <br /> <span className='text-2xl '>Code Ninjas - Port Coquitlam, BC</span><br/> <span className='text-sm'> 01/2022 to 02/2023</span> </div>
                             </h1>
             </div>
-            <div className="webd">
+            <div className="webd py-4 border mx-2 rounded-md border-purple-500">
             <div className={' h-full w-full flex flex-col items-center p-[10%] gap-1'}>
                 <Image className='' src={dges} width={600} height={600} alt='dges logo'/>
                     <ul className=''>

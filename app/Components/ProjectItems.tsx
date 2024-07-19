@@ -29,11 +29,11 @@ const ProjectItems = ({projects}: Projects | any) => {
     setMobileClicked(!mobView)
   }
   return (
-    <div className={`${lexendDeca.className} flex w-screen items-center flex-col md:flex-row gap-8`}>
+    <div className={`${lexendDeca.className} sm:border-none border rounded border-purple-500 flex sm:w-screen w-fit items-center flex-col sm:my-0 my-2 sm:flex-row gap sm:gap-8 p-4`}>
 
 
-            <div className='w-[50%] flex flex-col'>
-              <Link href={`${projects.url}`} target='_blank' className='h-full p-5'>
+            <div className='w-full sm:w-[50%] flex flex-col'>
+              <Link href={`${projects.url}`} target='_blank' className='h-full p-0 sm:p-5'>
                   <div>
                     <Image
                     src={mobView ? projects.images[1] : projects.images[0]}

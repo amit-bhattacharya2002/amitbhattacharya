@@ -12,7 +12,8 @@ type Props = {}
 
 const AboutmeDetails = (props: Props) => {
   return (
-    <div className="flex flex-col sm:grid h-screen p-1 sm:p-[5rem] w-screen grid-cols-1 sm:grid-cols-3  sm:grid-rows-5 gap-4">
+    <div className="flex justify-center m-auto flex-col sm:grid h-full sm:h-screen p-1 sm:p-[5rem] w-screen grid-cols-1 sm:grid-cols-3  sm:grid-rows-5 gap-4">
+        <h1 className={`${lexendDeca.className} text-purple-500 h-[5rem] w-fit m-auto sm:hidden block`}>ABOUT ME</h1>
         <div className={`col-span-1 sm:col-span-2 row-span-2  border border-r-[5px] border-b-[5px]  border-slate-700 font-mono text-sm sm:text-4xl hover:border-b-purple-500 hover:border-r-purple-500 transition-colors duration-300 pt-4 pl-4 text-center sm:text-start`}>Amit Bhattacharya
         <ul className={`text-[0.5rem] sm:text-sm mt-3 list-disc ml-3 text-start`}>
             <li>Experienced professional in educational coding instruction and web development.</li>

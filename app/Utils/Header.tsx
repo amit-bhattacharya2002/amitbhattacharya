@@ -14,7 +14,7 @@ const Header = () => {
   const {activeSection, setActiveSection} = useActiveSectionContext();
   return (
    
-      <HeaderStyled>
+      <HeaderStyled className='sm:bg-black bg-transparent'>
           <div className='w-full hidden sm:flex justify-between '>
             <Link href={"/#amit"}><div className={`logo bg-gradient-to-r from-violet-500 to-purple-500 bg-clip-text text-transparent text-xs md:text-xl`}><h1 className={`${lexendDeca.className}`}>AMIT BHATTACHARYA</h1></div></Link>
             <div className="nav ">
@@ -51,7 +51,7 @@ const HeaderStyled = styled.header`
     border: 2px solid #a855f7;
     /* color: #a855f7; */
     scroll-margin-top: 1rem;
-    background-color: black;
+    /* background-color: black; */
 
 /* background: rgba(212, 212, 212, 0.354);
 border-radius: 16px;
@@ -64,8 +64,10 @@ backdrop-filter: blur(10.1px);
       font-size: 0.5rem;
       width: 100vw;
       /* display: none; */
+
       border: none;
     }
+    
     /* background-color: black; */
     /* -webkit-backdrop-filter: opacity(0.25); */
     /* border-radius: 2rem; */

@@ -10,7 +10,8 @@ const MobileNav = () => {
         setNavStatus(!navStatus)
     }
   return (
-    <div className='text-white block sm:hidden w-full h-[50%]'><button onClick={()=>(handleMenu())} className='m-auto block text-2xl text-purple-500'>{navStatus ? <TiThMenu />:<IoCloseSharp />}</button>
+    <div className=' flex flex-col sm:hidden w-full h-[100%]'>
+        <button onClick={()=>(handleMenu())} className='m-auto text-2xl text-purple-500'>{navStatus ? <TiThMenu />:<IoCloseSharp />}</button>
 
     <div className={`h-[30vh] bg-black w-[100%] border relative top-3 ${navStatus? `hidden` : `block`}`}>
         <nav>
