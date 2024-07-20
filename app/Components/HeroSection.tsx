@@ -62,7 +62,7 @@ const HeroSection = () => {
             </div>
 
             <div className='sm:hidden mt-[5rem]'>
-          <h1 className='static text-center text-slate-500 will-change-transform text-4xl w-full'>Developer.Designer</h1>
+          <h1 className={`static ${lexendDeca.className} text-center text-slate-500 will-change-transform text-4xl w-full`}>Developer.Designer</h1>
         </div>
         </div>
         <div className='flex'>
