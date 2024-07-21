@@ -39,12 +39,13 @@ body {
     
     linear-gradient(
         
-        #0b0b12 .05rem,
+    #12121c .05rem,
         transparent .05rem
     ),
+    /*original color for the grid lines 0b0b12 */
     linear-gradient(
         90deg,
-        #0b0b12 .05rem,
+        #12121c .05rem,
         transparent .05rem
     );
     background-size: 0.5rem 0.5rem;
