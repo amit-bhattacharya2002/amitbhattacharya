@@ -25,7 +25,7 @@ const HeroSection = () => {
   `
   // sm:border-b sm:border-b-violet-500
     const {scrollYProgress} = useScroll()
-    const x = useTransform( scrollYProgress, [0,1] , [0, -8000])
+    const x = useTransform( scrollYProgress, [0,1] , [0, -10000])
 //     useEffect(() => {
 //       console.log(x)
 // }, [x])
@@ -93,7 +93,7 @@ const HeroSection = () => {
 
               
           {/* ${scrollYProgress != null? 'scrollText' : ''}` */}
-          <TitleStyled style={{x}} className={`bg-gradient-to-r from-slate-500 to-slate-700 bg-clip-text text-transparent will-change-transform ${lexendDeca.className}	transition-colors delay-200 hover:text-violet-500 hidden sm:block`}>
+          <TitleStyled style={{x}} className={`bg-gradient-to-r from-slate-500 to-slate-700 bg-clip-text text-transparent will-change-transform ${lexendDeca.className} hidden sm:block`}>
         Developer.Designer.Developer.Designer.Developer.Designer.Developer.
         </TitleStyled>
 
