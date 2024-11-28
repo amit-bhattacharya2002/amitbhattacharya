@@ -25,7 +25,7 @@ const HeroSection = () => {
   `
   // sm:border-b sm:border-b-violet-500
     const {scrollYProgress} = useScroll()
-    const x = useTransform( scrollYProgress, [0,1] , [0, -10000])
+    const x = useTransform( scrollYProgress, [0,1] , [0, -12000])
 //     useEffect(() => {
 //       console.log(x)
 // }, [x])
