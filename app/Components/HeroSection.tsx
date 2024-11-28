@@ -93,7 +93,7 @@ const HeroSection = () => {
 
               
           {/* ${scrollYProgress != null? 'scrollText' : ''}` */}
-          <TitleStyled style={{x}} className={`bg-gradient-to-r from-slate-500 to-slate-700 bg-clip-text text-transparent will-change-transform ${lexendDeca.className}	 hover:animate-scrollT hidden sm:block`}>
+          <TitleStyled style={{x}} className={`bg-gradient-to-r from-slate-500 to-slate-700 bg-clip-text text-transparent will-change-transform ${lexendDeca.className}	 hover:text-violet-500 hidden sm:block`}>
         Developer.Designer.Developer.Designer.Developer.Designer.Developer.
         </TitleStyled>
 
